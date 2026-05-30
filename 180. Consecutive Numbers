@@ -1,0 +1,13 @@
+# Write your MySQL query statement below
+
+##adding to github
+Select Distinct log1.num as ConsecutiveNums
+from Logs as Log1, Logs as Log2, Logs as Log3
+
+
+WHERE 
+
+log1.id + 1 = log2.id  AND
+log2.id + 1 = log3.id  AND
+log1.num = log2.num AND
+log2.num = log3.num;
